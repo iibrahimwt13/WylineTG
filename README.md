@@ -1,77 +1,21 @@
-
-[SUPPORT](https://t.me/SupSpace)
-
-----
-
-<div align="center">
-  <img src="https://telegra.ph/Space-01-17">
-  <h1>SPACE UserBot</h1>
-</div>
 <p align="center">
-    Space UserBot, Telegram kullanmanızı kolaylaştıran bir bottur. Tamamen açık kaynaklı ve ücretsizdir.
+    <a href="https://github.com/iibrahimwt13/WylineTGBot">
+        <a href="https://resimlink.com/63d" title="ResimLink - Resim Yükle"><img src="https://r.resimlink.com/63d.jpg" title="ResimLink - Resim Yükle" alt="ResimLink -     
     <br>
-        <a href="https://github.com/whomiri/SpaceUserBot/blob/master/README.md#kurulum">Kurulum</a> |
-        <a href="https://github.com/Whomiri/SpaceUserBot/wiki/G%C3%BCncelleme">Güncelleme</a> |
-        <a href="https://t.me/SpaceUserBot">Telegram Kanalı</a>
+        <a href="https://github.com/iibrahimwt13/WylineTGBot/master/README.md#U">Kurulum</a> |
+        <a href="https://github.com/iibrahimwt13/WylineTGBot/wiki/G%C3%BCncelleme">Güncelleme</a> |
+        <a href="https://t.me/wylinesupport">Telegram Grubu</a>
     <br>
-</p>
 
-----
-![Docker Pulls](https://img.shields.io/docker/pulls/fusuf/asenauserbot?style=flat-square) ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/fusuf/asenauserbot?style=flat-square)
-## Kurulum
-### Çok Basit Yöntem
-[Youtube Videosu](https://www.youtube.com/watch?v=mUUQ53TYqI0) ![YouTube Video Views](https://img.shields.io/youtube/views/mUUQ53TYqI0?style=flat-square)
+# Kurulum
 
-**Android:** Termuxu açın ve bu kodu yapıştırın: `bash <(curl -L https://kutt.it/88I5KA)`
+Telegrami Çok Rahat Bi Şekilde Kullanmanızı Sağlayam Küçük Bir Bottur.
+Olacaklardan Wyline Sorumlu Değildir Kurduğunuz da Bütün Sorumluluklari Kabul Etmiş Olursunuz
 
-**iOS:** iSH açın ve bu kodu yapıştırın: `apk update && apk add bash && apk add curl && curl -L -o asena_installer.sh https://t.ly/vATX && chmod +x asena_installer.sh && bash asena_installer.sh`
 
-**Windows 10:** [Python](https://www.microsoft.com/en-us/p/python-38/9mssztt1n39l#activetab=pivot:overviewtab) indirin ardından PowerShell bu kodu yapıştırın: `Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://kutt.it/aYTzCx')`
+## String Alıcı
+ <a href="https://repl.it/@iibrahimwt13/StringAl-c-#main.py"><img src="https://img.shields.io/badge/run-string__session.py-blue?style=for-the-badge&logo=repl.it" alt="generate_string" /></a>
 
-### Basit Yöntem
-Eğer botu kurma hakkında fikriniz yoksa burayı okuyunuz: [Kurulum Rehberi](https://github.com/Quiec/AsenaUserBot/wiki/Kurulum/)
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/WhoMiri/SpaceUserBot)
-### Zor Yöntem
-```python
-git clone https://github.com/WhoMiri/SpaceUserBot.git
-cd SpaceUserBot
-pip install -r requirements.txt
-# Config.env oluşturun ve düzenleyin. #
-python3 main.py
-```
-
-## Örnek Plugin
-```python
-from userbot.events import register
-from userbot.cmdhelp import CmdHelp # <-- Bunu ekleyin.
-
-@register(outgoing=True, pattern="^.yoxlama")
-async def deneme(event):
-    await event.edit('Yoxlamadan sonraki edit!')
-
-Help = CmdHelp('yoxlama') # Bilgi ekleyeceğiz diyoruz.
-Help.add_command('deneme', # Komut
-    None, # Komut parametresi varsa yazın yoksa None yazın
-    'Gerçekten deneme yapıyor!', # Komut açıklaması
-    'deneme' # Örnek kullanım.
-    )
-Help.add_info('@TheMiri tarafından yapılmıştır.') # Bilgi ekleyebilirsiniz.
-# Ya da uyarı --> Help.add_warning('KULLANMA!')
-Help.add() # Ve Ekleyelim.
-```
-
-## Bilgilendirme
-Herhangi bir istek & şikâyet & öneri varsa [destek grubuna](https://t.me/SupSpace) ulaşabilirsiniz.
-
-```
-    Userbottan dolayı; Telegram hesabınız yasaklanabilir.
-    Bu bir açık kaynaklı projedir, yaptığınız her işlemden kendiniz sorumlusunuz. Kesinlikle Asena yöneticileri sorumluluk kabul etmemektedir.
-    Asenayı kurarak bu sorumlulukları kabul etmiş sayılırsınız.
-```
-
-## Credit
-Thanks for;
-
-[Asena UserBot](https://github.com/yusufusta/AsenaUserBot)
+## How To Deploy 👷  
+  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/iibrahimwt13/WylineTGBot)
 
