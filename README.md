@@ -17,5 +17,5 @@ Olacaklardan Wyline Sorumlu Değildir Kurduğunuz da Bütün Sorumluluklari Kabu
  <a href="https://repl.it/@iibrahimwt13/StringAl-c-#main.py"><img src="https://img.shields.io/badge/run-string__session.py-blue?style=for-the-badge&logo=repl.it" alt="generate_string" /></a>
 
 ## How To Deploy 👷  
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/iibrahimwt13/WylineTGBot)
+  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/iibrahimwt13/WylineTG)
 
