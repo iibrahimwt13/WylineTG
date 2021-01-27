@@ -10,8 +10,8 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/whomiri/SpaceUserBot",
-  "website":   "https://t.me/TheMiri",
+  "repository": "https://github.com/iibrahimwt13/WylineTG",
+  "website":   "https://t.me/wylinesupport",
   "success_url": "https://t.me/SpaceAiD",
   "stack": "container",
   "env": {
@@ -54,7 +54,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Fork sağlamanız durumunda repo URL'nizi buraya ekleyin. Varsayılan olarak kendi repo adresimiz eklidir.",
-      "value": "https://github.com/whomiri/SpaceUserBot",
+      "value": "https://github.com/iibrahimwt13/WylineTG",
       "required": true
     },
     "COUNTRY": {
@@ -217,7 +217,7 @@
     },
     "PAKET_ISMI": {
       "description": "Dızla komutu paket ismini belirleyin. Paket ismi şöyle olacaktır: @KullanıcıAdın verdiğin değer 1",
-      "value": "@SpaceUserBot Paketi",
+      "value":  @WylineUserBot Paketi",
       "required": false
     },
     "OTOMATIK_KATILMA": {
