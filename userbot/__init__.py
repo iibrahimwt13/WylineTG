@@ -32,11 +32,11 @@ ASYNC_POOL = []
 
 if CONSOLE_LOGGER_VERBOSE:
     basicConfig(
-        format="%(asctime)s - @SpaceUserBot - %(levelname)s - %(message)s",
+        format="%(asctime)s - @wylinesupport - %(levelname)s - %(message)s",
         level=DEBUG,
     )
 else:
-    basicConfig(format="%(asctime)s - @SpaceUserBot - %(levelname)s - %(message)s",
+    basicConfig(format="%(asctime)s - @wylinesupport - %(levelname)s - %(message)s",
                 level=INFO)
 LOGS = getLogger(__name__)
 
@@ -284,7 +284,7 @@ def butonlastir(sayfa, moduller):
 with bot:
     if OTOMATIK_KATILMA:
         try:
-            bot(JoinChannelRequest("@SpaceUserBot"))
+            bot(JoinChannelRequest("@wylinesupport"))
             bot(JoinChannelRequest("@SpaceAiD"))
         except:
             pass
@@ -297,7 +297,7 @@ with bot:
         @tgbot.on(NewMessage(pattern='/start'))
         async def start_bot_handler(event):
             if not event.message.from_id == uid:
-                await event.reply(f'`Merhaba ben` @SpaceUserBot`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Space açabilirsin; Kanala bak` @SpaceUserBot')
+                await event.reply(f'`Merhaba ben` @wylinesupport`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Space açabilirsin; Kanala bak` @SpaceUserBot')
             else:
                 await event.reply(f'`Tengri save Turks! Space working... `')
 
@@ -311,7 +311,7 @@ with bot:
                 veriler = (butonlastir(0, sorted(CMD_HELP)))
                 result = await builder.article(
                     f"Lütfen Sadece .yardım Komutu İle Kullanın",
-                    text=f"**🐺 Tanrı Türk'ü Korusun!** [Space](https://t.me/SpaceUserBot) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
+                    text=f"**Wyline Çalışıyor😎!** [Space](https://t.me/wylinesupport) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
                     buttons=veriler[1],
                     link_preview=False
                 )
@@ -327,14 +327,14 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    "@SpaceUserBot",
-                    text="""@SpaceUserBot'u kullanmayı deneyin!
+                    "@wylinesupport",
+                    text="""@wylinesupport kullanmayı deneyin!
 Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın, siz başkasının botunu yönetemezsiniz! Alttaki GitHub adresinden tüm kurulum detayları anlatılmıştır.""",
                     buttons=[
-                        [custom.Button.url("Kanala Katıl", "https://t.me/SpaceUserBot"), custom.Button.url(
-                            "Gruba Katıl", "https://t.me/SupSpace")],
+                        [custom.Button.url("Kanala Katıl", "https://t.me/wylinesupport"), custom.Button.url(
+                            "Gruba Katıl", "https://t.me/wylinesupport")],
                         [custom.Button.url(
-                            "GitHub", "https://github.com/whomiri/SpaceUserBot")]
+                            "GitHub", "https://github.com/iibrahimwt13/WylineTG")]
                     ],
                     link_preview=False
                 )
@@ -347,7 +347,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonlastir(sayfa, CMD_HELP)
             await event.edit(
-                f"**🐺 Tanrı Türk'ü Korusun!** [Space](https://t.me/SpaceUserBot) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
+                f"**Wyline Çalışıyor😎!** [Space](https://t.me/SpaceUserBot) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False
             )
