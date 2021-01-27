@@ -217,7 +217,7 @@
     },
     "PAKET_ISMI": {
       "description": "Dızla komutu paket ismini belirleyin. Paket ismi şöyle olacaktır: @KullanıcıAdın verdiğin değer 1",
-      "value": @WylineUserBot Paketi",
+      "value": "@WylineUserBot Paketi",
       "required": false
     },
     "OTOMATIK_KATILMA": {
